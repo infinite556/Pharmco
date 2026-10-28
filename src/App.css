@@ -1,0 +1,215 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #0A1C16; /* Dark background so the green card stands out */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+/* The Green Card exactly matching the user photo */
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background-color: #0D5C49; /* Rich Forest Green from the photo */
+  border-radius: 30px;
+  padding: 34px 28px;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+/* Header & Logo */
+.auth-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.logo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.logo-icon {
+  width: 38px;
+  height: 38px;
+  background-color: #EBA32A; /* Warm Amber from the photo */
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1A3E33;
+  font-size: 24px;
+  font-weight: 800;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo-text {
+  font-size: 21px;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.3px;
+}
+
+.auth-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.auth-subtitle {
+  font-size: 13px;
+  color: #C6E6DD;
+  font-weight: 400;
+}
+
+/* Form Groups & Labels */
+.form-group {
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+/* Pure White Rounded Inputs from the photo */
+.form-input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 16px; /* Pill-shaped rounded rectangle */
+  color: #1E293B;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 0 3px rgba(235, 163, 42, 0.45);
+}
+
+.form-input::placeholder {
+  color: #94A3B8;
+  font-size: 13.5px;
+}
+
+/* Row for forgot password */
+.form-row-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: #C6E6DD;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.link-btn:hover {
+  color: #EBA32A;
+}
+
+/* Amber/Orange Button matching the photo */
+.submit-btn {
+  width: 100%;
+  height: 48px;
+  background-color: #EBA32A; /* Warm Amber */
+  color: #1A3E33; /* Dark green/slate text on amber */
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-btn:hover {
+  background-color: #D9921B;
+  transform: translateY(-1px);
+}
+
+.submit-btn:active {
+  transform: translateY(1px);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Alerts */
+.alert {
+  padding: 11px 14px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.alert-error {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+/* Footer Link matching photo */
+.auth-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.auth-footer button {
+  background: none;
+  border: none;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 6px;
+  font-size: 13px;
+}
+
+.auth-footer button:hover {
+  color: #EBA32A;
+}
